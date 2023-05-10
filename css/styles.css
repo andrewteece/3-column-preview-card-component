@@ -1,5 +1,23 @@
+/* CSS CUSTOM PROPERTIES */
 
+:root {
+--clr-primary-orange: hsl(31, 77%, 52%);
+--clr-primary-cyan: hsl(184, 100%, 22%);
+--clr-primary-cyan: hsl(179, 100%, 13%);
 
+--clr-neutral-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+--clr-neutral-gray: hsl(0, 0%, 95%) /* background, headings, buttons */
+
+--ff-base: font-family: 'Lexend Deca', sans-serif;
+--ff-accent: font-family: 'Big Shoulders Display', cursive;
+
+--fs-base: .9375rem;
+
+--fw--base: 400;
+--fw-accent: 700;
+}
+
+/* CSS RESET */
 /*
   1. Use a more-intuitive box-sizing model.
 */
