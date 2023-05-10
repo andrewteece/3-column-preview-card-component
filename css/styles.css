@@ -6,14 +6,14 @@
 --clr-primary-cyan: hsl(179, 100%, 13%);
 
 --clr-neutral-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
---clr-neutral-gray: hsl(0, 0%, 95%) /* background, headings, buttons */
+--clr-neutral-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
 
---ff-base: font-family: 'Lexend Deca', sans-serif;
---ff-accent: font-family: 'Big Shoulders Display', cursive;
+--ff-base: 'Lexend Deca', sans-serif;
+--ff-accent: 'Big Shoulders Display', cursive;
 
 --fs-base: .9375rem;
 
---fw--base: 400;
+--fw--main: 400;
 --fw-accent: 700;
 }
 
@@ -69,6 +69,13 @@
   */
   #root, #__next {
     isolation: isolate;
+  }
+
+  /* GENERAL STYLES */
+
+  body {
+    font-family: var(--ff-base);
+    font-size: var(--fs-base);
   }
 
 
