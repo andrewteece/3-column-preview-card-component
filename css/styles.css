@@ -147,6 +147,10 @@ article img {
 }
 
 @media (min-width: 50em) {
+    body {
+        padding: 0;
+    }
+
     .container {
         grid-template-columns: repeat(3, 1fr);
         max-width: 57.5rem;
