@@ -63,7 +63,7 @@ body {
 
 .card__title {
   font-family: var(--fw-accent);
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: -0.25rem;
 }
@@ -150,6 +150,14 @@ article img {
     .container {
         grid-template-columns: repeat(3, 1fr);
         max-width: 57.5rem;
+        min-height: 31.25rem;
+    }
+    .container__article {
+        grid-template-rows: .3fr .4fr 1fr 3.125rem;
+    }
+    .card__title {
+        font-size: 2.5rem;
+        margin-top: -.5rem;
     }
 }
 
