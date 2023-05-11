@@ -63,11 +63,9 @@ body {
 
 .card__title {
   font-family: var(--fw-accent);
-  font-weight: var(--fw-accent);
   font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: -0.25rem;
-  line-height: 3rem;
 }
 
 .container__article {
@@ -97,6 +95,7 @@ body {
   font-weight: 500;
   padding: 0.85rem 1.5rem;
   font-size: 0.95rem;
+  cursor: pointer;
 }
 
 article img {
@@ -116,7 +115,7 @@ article img {
 .card__1 > .card__action:focus {
     color: var(--clr-neutral-white);
     background: var(--clr-primary-orange);
-    border: .125rem solid var(--clr-neutral-white);
+    outline: .125rem solid var(--clr-neutral-white);
 }
 
 .card__2 {
@@ -130,7 +129,7 @@ article img {
 .card__2 > .card__action:focus {
     color: var(--clr-neutral-white);
     background: var(--clr-primary-cyan);
-    border: .125rem solid var(--clr-neutral-white);
+    outline: .125rem solid var(--clr-neutral-white);
 }
 
 .card__3 {
@@ -144,7 +143,14 @@ article img {
 .card__3 > .card__action:focus {
     color: var(--clr-neutral-white);
     background: var(--clr-primary-darkCyan);
-    border: .125rem solid var(--clr-neutral-white);
+    outline: .125rem solid var(--clr-neutral-white);
+}
+
+@media (min-width: 50em) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 57.5rem;
+    }
 }
 
 /* FRONTEND MENTOR ATTR */
