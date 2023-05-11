@@ -62,10 +62,9 @@ body {
 }
 
 .card__title {
-  font-family: var(--fw-accent);
+  font-family: 'Big Shoulders Display', cursive;
   font-size: 2.2rem;
   text-transform: uppercase;
-  letter-spacing: -0.25rem;
 }
 
 .container__article {
