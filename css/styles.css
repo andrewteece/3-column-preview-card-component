@@ -20,12 +20,11 @@
 /* CSS RESET */
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 /* GENERAL STYLES */
+
 
 body {
   min-height: 100vh;
@@ -40,13 +39,21 @@ body {
 /* COMPONENT STYLES */
 
 .container {
-  display: grid;
-  grid-template-rows: repeat(3, 27em);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 30rem;
   margin: 0 2rem;
   color: var(--clr-neutral-white);
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   overflow: hidden;
+}
+
+@media (min-width: 50em) {
+  .container {
+    flex-direction: row;
+    max-width: 55rem;
+  }
 }
 
 .container__heading--sr-only {
@@ -62,45 +69,33 @@ body {
 }
 
 .card__title {
-  font-family: 'Big Shoulders Display', cursive;
-  font-size: 2.2rem;
+  font-family: var(--ff-accent);
+  font-size: 2.5rem;
+  color: var(--clr-neutral-white);
   text-transform: uppercase;
 }
 
 .container__article {
-  display: grid;
-  align-items: center;
-  grid-template-rows: 0.4fr 0.5fr 1fr 3.125rem;
   padding: 3rem;
 }
 
 .card__description {
-  align-self: flex-start;
-  line-height: 1.6rem;
-  margin-top: 0.2rem;
-  letter-spacing: 0.01em;
   font-size: var(--fs-base);
-  word-spacing: 0.05em;
-  max-width: 20rem;
+  line-height: 1.6rem;
+  
 }
 
 .card__action {
-  all: unset;
-  width: 45%;
+  min-width: 80%;
   border-radius: 3.125rem;
-  background: var(--clr-neutral-gray);
-  text-align: center;
-  transition: 0.7s ease;
   font-weight: 500;
-  padding: 0.85rem 1.5rem;
-  font-size: 0.95rem;
+  margin-top: 4rem;
+  padding: .85rem 1.5rem;
+  font-size: .95rem;
+  border: none;
+  transition: 0.7s ease;
   cursor: pointer;
 }
-
-article img {
-  margin-top: -1.3rem;
-}
-
 /* CARD BACKGROUND & ACTIONS */
 
 .card__1 {
@@ -145,24 +140,7 @@ article img {
     outline: .125rem solid var(--clr-neutral-white);
 }
 
-@media (min-width: 50em) {
-    body {
-        padding: 0;
-    }
 
-    .container {
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 57.5rem;
-        min-height: 31.25rem;
-    }
-    .container__article {
-        grid-template-rows: .3fr .4fr 1fr 3.125rem;
-    }
-    .card__title {
-        font-size: 2.5rem;
-        margin-top: -.5rem;
-    }
-}
 
 /* FRONTEND MENTOR ATTR */
 
