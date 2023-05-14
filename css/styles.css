@@ -52,7 +52,7 @@ body {
 @media (min-width: 50em) {
   .container {
     flex-direction: row;
-    max-width: 55rem;
+    max-width: 57.5rem;
   }
 }
 
