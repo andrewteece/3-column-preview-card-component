@@ -5,7 +5,7 @@
   --clr-primary-cyan: hsl(184, 100%, 22%);
   --clr-primary-darkCyan: hsl(179, 100%, 13%);
 
-  --clr-neutral-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+  --clr-neutral-white: hsla(0, 0%, 100%, 0.9); /* paragraphs */
   --clr-neutral-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
 
   --ff-base: "Lexend Deca", sans-serif;
@@ -52,7 +52,7 @@ body {
 @media (min-width: 50em) {
   .container {
     flex-direction: row;
-    max-width: 57.5rem;
+    max-width: 52rem;
   }
 }
 
@@ -86,7 +86,7 @@ body {
 }
 
 .card__action {
-  min-width: 80%;
+  min-width: 65%;
   border-radius: 3.125rem;
   font-weight: 500;
   margin-top: 4rem;
