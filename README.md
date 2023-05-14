@@ -37,6 +37,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Andrew Teece](https://www.your-site.com)
+- Website - [Andrew Teece](https://github.com/andrewteece)
 - Frontend Mentor - [@andrewteece](https://www.frontendmentor.io/profile/andrewteece)
 
